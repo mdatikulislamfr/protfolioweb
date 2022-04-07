@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;  
+    background-color: #d1cecea1;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+:root{
+    --textcolor:#000;
+    --headerBg:#0d053f;
+    --footerBg:#0d0d0e;
+}
+/* header sction strat */
+#header{
+    background: var(--headerBg);
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.botm{
+    margin: 34px 0;
+   
+}
+/* child  of header*/
+#header .log-user{
+    clear: both;
+    contain: content;
+ }
+#header .log-user img{
+    float: left;
+}
+#header .log-user h4{
+    color: #e8dcdc;
+    float: left;
+    font-size: 36px;
+    margin-left: 16px;
+    text-shadow: 0 6px 1px black;
+    letter-spacing: 1px;
+}
+#header .navber{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#header .navber i{
+    color: #fff;
+    font-size: 34px;
+    cursor: pointer;
+    display: none;
+}
+#header .navber nav ul i{
+    display: none;
+}
+#header .navber nav ul li{
+    float: left;
+    margin-left: 17px;
+    padding: 7px 17px;
+    transition: all linear 0.3s;
+}
+#header .navber nav ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+#header .navber nav ul li a:hover{
+    color: rgb(146, 129, 241);
+}
+#header .navber nav ul li:hover{
+    border-bottom: 1px solid red;
+   
+}
+/* =====================================home section ================================= */
+#home{
+    background-image: url('../img/homeBg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 59px 9px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#home .imgContent{
+    clear: both;
+    contain: content;
+}
+#home .imgContent .img{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    height: 413px;
+    text-align: left;
+
+}
+#home .imgContent .img img{
+    height: 413px;
+    width: auto;
+    animation-name: imageanim;
+    animation-duration: 1s;
+    transition:  all linear 0.3s;
+}
+@keyframes imageanim {
+    0%{
+        height: 0;
+        width: 0;
+        opacity: 0.3;
+    }
+    100%{
+        height: 413px;
+        width: auto;
+        opacity: 1;
+
+    }
+}
+#home .imgContent .img img:hover{
+    transform: scale(1.03);
+    opacity: 0.93;
+}
+
+#home .textContent h3{
+    color: #fff;
+    font-size: 51px;
+    text-transform: capitalize;
+    text-shadow: 0 9px 4px #1e0e0e;
+    margin-top: 13px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+#home .textContent p{
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 29px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 42px;
+    
+}
+#home .textContent .getStartbtn{
+    text-align: center;
+    padding: 20px;    
+}
+#home .textContent .getStartbtn a{
+    text-align: center;
+    background: linear-gradient(#270b39,#0c1d80);
+    width: 200px;
+    padding: 8px 7px;
+    border-radius: 13px 0 13px 0px;
+    text-transform: capitalize;
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 30px;
+    color: #fff;
+}
+#home .textContent .getStartbtn a:hover{
+    background: linear-gradient(#0c1d80,#270b39);
+    
+}
+/* ===========================================about me ============================== */
+#about{
+    background-color: #fff;
+    padding: 10px;
+}
+#about .rap{
+    background-color: #fff;
+    padding: 10px;
+ 
+}
+#about .rap .topTitle{
+    background-color: rgb(255, 251, 251);
+    text-align: center;
+    border-radius: 5px;
+    margin: 27px 0;
+    padding: 39px 0;
+    box-sizing: border-box;
+
+}
+#about .rap .topTitle h3{
+    font-size: 59px;
+    margin-bottom: 17px;
+    color: #5b5959;
+    text-align: center;
+    text-shadow: 2px 2px 4px #8a8a8a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#about .rap .topTitle p{
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    color: #3c3535;
+    line-height: 26px;
+    text-align: center;
+}
+#about .rap hr{
+    color: #5b5959;
+    border-bottom: 0;
+    opacity: 0.4;
+}
+#about .rap h2{
+    font-size: 49px;
+    margin-bottom: 17px;
+    color: #272727;
+    text-align: center;
+    text-shadow: 2px 2px 4px #8a8a8a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#about .rap .skills{
+    padding: 10px;
+    width: 1250px;
+    margin: auto;
+    margin-bottom: 67px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+#about .rap .skills .skillBox{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    height: 400px;
+    width: 367px;
+    box-shadow: 0 0 4px 1px #f2f0f0;
+    margin: 6px 6px;
+    text-align: justify;
+    position: relative;
+    transition: all linear 0.4s;
+
+}
+#about .rap .skills .skillBox .content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: all linear 1s;
+}
+#about .rap .skills .skillBox::before{
+    content: '';
+    position: absolute;
+    height:0%;
+    width: 100%;
+    background:rgb(255, 0, 0);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all linear 1s;
+}
+#about .rap .skills .skillBox:hover.skillBox{
+    margin-top: -10px;
+    box-shadow: 0px 7px 8px 1px #8c8c8c;
+}
+#about .rap .skills .skillBox:hover.skillBox .content{
+    color: #fff;
+}
+#about .rap .skills .skillBox:hover.skillBox::before {
+    height: 100%;
+    top: 0;
+
+}
+#about .rap .skills .skillBox .content i{
+    display: block;
+    text-align: center;
+    margin: 16px;
+    font-size: 98px;
+    color: #64647b;
+}
+#about .rap .skills .skillBox .content h4{
+    text-align: center;
+    font-size: 38px;
+    margin: 10px;
+    color: #626161;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#about .rap .skills .skillBox .content p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #625a5a;
+    margin: auto;
+}
+#about .rap .skills .skillBox .content a{
+    display: block;
+    width: 151px;
+    margin: auto;
+    margin-top: 38px;
+    background: #0306aa;
+    text-align: center;
+    padding: 11px;
+    color: #fff;
+    border-radius: 9px;
+    font-size: 16px;
+}
+#about .rap .skills .skillBox:hover .content p,#about .rap .skills .skillBox:hover .content h4,#about .rap .skills .skillBox:hover .content i{
+    color: #fff;
+}
+
+/* =========================================== protfolio section strat============================ */
+#protfolio{
+    background-image: url('../img/protfliobg.bmp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10px;
+}
+#protfolio .rap {
+   
+}
+#protfolio .rap .toptitle{
+    text-align: center;
+    padding: 90px 0;
+}
+#protfolio .rap .toptitle h2{
+    font-size: 68px;
+    color: #151515;
+    text-shadow: 0 4px 3px #4d4c4c;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#protfolio .rap .toptitle p{
+    font-size: 30px;
+    color: #254a91;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#protfolio .rap .allprofoliobox{
+    padding: 10px;
+    width: 1250px;
+    margin: auto;
+    margin-bottom: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+#protfolio .rap .allprofoliobox .protbox{
+    height: 200px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+    margin: 10px;
+    cursor:grab;
+    background: #000;
+
+}
+#protfolio .rap .allprofoliobox .protbox img{
+    height: 100%;
+    width: 100%;
+    transition:  all linear .3s;
+    background: #000;
+}
+#protfolio .rap .allprofoliobox .protbox  img:hover{
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+#protfolio .rap .allprofoliobox .protbox a {
+    position: absolute;
+    width: 189px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px;
+    text-align: center;
+    background: linear-gradient(90deg, red, blue);
+    padding: 8px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 15px;
+    transition:  all linear .2s;
+    }
+#protfolio .rap .allprofoliobox .protbox a:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg,blue,red);
+      
+}
+/* =========================================== contact section ============================ */
+#contact{
+    background: #fff;
+    padding: 10px;
+    position: relative;
+    height: 1000px;
+}
+#contact .toptitile{
+    background: url('../img/contactBg.bmp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px 0;
+}
+#contact .toptitile h2{
+    font-size: 71px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+#contact .toptitile p{
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+#contact .contactForm{
+    width: 79%;
+    background: #f9f4f4;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 282px;
+    padding: 10px;
+}
+#contact .contactForm .form-group{
+    width: 48%;
+    margin: 6px 2px;
+    float: left;
+}
+#contact .contactForm .last{
+    width: 100%;
+    float: left;
+}
+#contact .contactForm .form-group label{
+    display: block;
+    margin: 5px 0;
+    color: #5e5c5c;
+}
+#contact .contactForm .form-group input{
+    width: 93%;
+    padding: 10px;
+    font-size: 17px;
+    color: #514f4f;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #d7cdcd;
+}
+#contact .contactForm  button{
+    width:100%;
+    padding: 10px;
+    font-size: 17px;
+    color: #514f4f;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #d7cdcd;
+    background: linear-gradient(90deg ,red , blue);
+    color: #fff;
+    cursor: pointer;
+}
+#contact .contactForm  button:hover{
+    background: linear-gradient(90deg, blue,red);
+
+}
+#contact .contactForm .form-group textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #514f4f;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #d7cdcd;
+    resize: none;
+}
+/* =================================fotter section ============================= */
+#footer{
+    background-color:#0d053f ;
+ }
+#footer .socal-link{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+ }
+ #footer .socal-link div a {
+    color: #fff;
+    position: relative;
+    padding: 0 3px;
+ }
+ #footer .socal-link div a i{
+    color: #fff;
+    padding: 10px;
+ }

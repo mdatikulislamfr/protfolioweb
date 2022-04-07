@@ -1,0 +1,115 @@
+/* basic grid systems */
+/* header about protfolio contact main footer grid-container all this id with grid reletede */
+/* parend */
+#grid-container{
+    display: grid;
+    margin: auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+} 
+/* child */
+#header{
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    'log navber navber'
+    ;
+}
+/* child  of header*/
+#header .log-user{
+    grid-area: log;
+  
+ }
+#header .navber{
+    grid-area: navber;
+   
+}
+#main{
+    grid-area: main;
+    background: rgb(131, 117, 117);
+    display: grid;
+    grid-template-areas: 
+    'home'
+    'about'
+    'protfolio'
+    'contact'
+    ;
+}
+/* child  of main*/
+#home{
+    grid-area: home;
+    display: grid;
+    grid-template-areas: 
+    'imgContent textContent'
+    ;
+}
+/* child  of home*/
+#home .imgContent{grid-area: imgContent;}
+#home .textContent{grid-area: textContent;}
+/* ==========================aabot section ===================== */
+#about{
+    grid-area: about;
+}
+#protfolio{
+    grid-area: protfolio;
+}
+#contact{
+    grid-area: contact;
+} 
+
+
+#footer{
+    grid-area: footer;
+}
+
+
+/* media query grid systems all size     320px. 480px. 600px.768px.900px.1024px.1200px.  */
+
+@media screen and (max-width:1200px) {
+   
+}
+@media screen and (max-width:1024px) {
+    
+}
+@media screen and (max-width:900px) {
+    
+} 
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (max-width:600px) {
+    #header{
+        grid-template-areas: 
+        'log log log log navber'
+        ;
+    }
+    #home{
+        grid-template-areas: 
+        'imgContent '
+        'textContent'
+        ;
+    }
+    #footer{
+        grid-area: footer;
+        background: rgb(207, 34, 164);
+        display: grid;
+        grid-template-areas: 
+        'location'
+        'socal'
+        ;
+    }
+}
+@media screen and (max-width:480px) {
+    
+}
+@media screen and (max-width:300px) {
+    
+}
+
+
+
+
+
